@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* .banner{
+    background-image: url('../../images/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+} */
+.banner,.banner-raw{
+    height: 380px;
+}
+.banner-img{
+    max-width: 100%;
+    height: inherit;
+}
+.height-inherit{
+    height: inherit;
+}
+.fa-bounce{
+    --fa-animation-duration: 2s;
+}
+.ff-poppins{
+    font-family: 'Poppins', sans-serif;
+}
