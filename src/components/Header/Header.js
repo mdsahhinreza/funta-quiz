@@ -11,7 +11,9 @@ const Header = () => {
         <div>
             <Navbar className='funta-bg' expand="md">  
             <Container>  
-            <Link className='text-decoration-none' to='/'><Navbar.Brand className='text-light fw-bolder'><FontAwesomeIcon icon={ faBrain } className='text-warning fw-bolder' ></FontAwesomeIcon> Funta Quiz</Navbar.Brand> </Link> 
+            <Link className='text-decoration-none' to='/'>
+                <Navbar.Brand className='text-light fw-bolder'><FontAwesomeIcon icon={ faBrain } className='text-warning fw-bolder' ></FontAwesomeIcon> Funta Quiz</Navbar.Brand> 
+            </Link> 
             <Navbar.Toggle aria-controls="basic-navbar-nav" />  
             <Navbar.Collapse id="basic-navbar-nav">  
                 <Nav className="ms-auto menu">

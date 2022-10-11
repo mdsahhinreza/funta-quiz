@@ -1,11 +1,17 @@
-import { faEye } from '@fortawesome/free-solid-svg-icons';
+import { faEye,faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Quistions.css';
 
-const Quistion = ({quistion,sl,showQAns,showhide}) => {
+const Quistion = ({quistion,sl,showQAns,showhide,saveSelectAns,selectAns}) => {
     const {id,question,options,correctAnswer} = quistion;
+    const myans = selectAns.filter(qid => qid.id === id);
     const isSow = showhide.find(sid => sid ===id );
+    let opt;
     
+    if(myans[0]){
+        opt = myans[0].ans;
+        // console.log(myans[0].ans);
+    }
 
     
     return (
@@ -15,23 +21,19 @@ const Quistion = ({quistion,sl,showQAns,showhide}) => {
             
             <div className='d-flex justify-content-between py-3'>
                 <h4 className=' text-start ps-4 fw-normal fs d-flex totka' dangerouslySetInnerHTML={{__html: `<small>Q-${sl+1} ${question}</small>`}}></h4>
-
-                {/* <h4  className='d-flex justify-content-between'> 
-                    <span  className='me-2 d-flex'>Quiz {sl+1} : <span dangerouslySetInnerHTML={{__html: question}} /> </span> 
-                    
-                    
-                </h4> */}
-                <button onClick={()=>showQAns(id)} className='border-0 funta-color'><FontAwesomeIcon icon={faEye}></FontAwesomeIcon></button>
+                <button onClick={()=>showQAns(id)} className='border-0 funta-color'>
+                    {isSow? <FontAwesomeIcon icon={faEyeSlash}></FontAwesomeIcon> : <FontAwesomeIcon icon={faEye}></FontAwesomeIcon>}
+                </button>
                 
             </div>
             <div>
                   {
                     options.map(option => 
-                    <div key={option} className="form-check py-3 px-3 cursor my-3  border border-warning" htmlFor={option}>
-                        {/* <input className="form-check-input" type="radio" name={id} value="" id={option}/>
-                        <label className="form-check-label" htmlFor={option}>
-                            {option}
-                        </label> */}
+                    <div 
+                        key={option} 
+                        className={`form-check py-3 px-3 cursor my-3  border  ${opt === option ? 'bg-warning' : 'border-warning'}`} 
+                        onClick={()=>saveSelectAns(id,option)}
+                    >
                         <h6>{option}</h6>
                     </div>)
                   }
