@@ -15,9 +15,6 @@ const Quiz = () => {
         const getquistions = quistions.find(qs => qs.id === id);
 
         
-
-        // console.log(getquistions);
-        
         if(myans){
             console.log('already added');
             

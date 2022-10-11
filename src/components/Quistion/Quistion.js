@@ -23,8 +23,7 @@ const Quistion = ({quistion,sl,showQAns,showhide,saveSelectAns,selectAns}) => {
                 <h4 className=' text-start ps-4 fw-normal fs d-flex totka' dangerouslySetInnerHTML={{__html: `<small>Q-${sl+1} ${question}</small>`}}></h4>
                 <button onClick={()=>showQAns(id)} className='border-0 funta-color'>
                     {isSow? <FontAwesomeIcon icon={faEyeSlash}></FontAwesomeIcon> : <FontAwesomeIcon icon={faEye}></FontAwesomeIcon>}
-                </button>
-                
+                </button>                
             </div>
             <div>
                   {
