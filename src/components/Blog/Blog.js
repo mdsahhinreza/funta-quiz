@@ -24,7 +24,7 @@ const Blog = () => {
         <div className="blog">
             <div className='container bg-light rounded border mb-4'>
                 <div className="p-4 text-start">
-                    <h1 className='brandColor'>Blog-1: What is the purpose of react-router?</h1>
+                    <h1 className='funta-color'>Blog-1: What is the purpose of react-router?</h1>
                     <p className='text-justify pt-2'>
                     <b>Routing</b> is a process in which a user is directed to different pages based on their action or request. ReactJS Router is mainly used for developing Single Page Web Applications. React Router is used to define multiple routes in the application. When a user types a specific URL into the browser, and if this URL path matches any 'route' inside the router file, the user will be redirected to that particular route.<br></br><br></br>
 
@@ -37,7 +37,7 @@ const Blog = () => {
 
             <div className='container bg-light rounded border mb-4'>
                 <div className="p-4 text-start">
-                    <h1 className='brandColor'>Blog-2: How does context API work?</h1>
+                    <h1 className='funta-color'>Blog-2: How does context API work?</h1>
                     <p className='text-justify pt-2'>
                     <h4>What is Context API?</h4>
                     The React Context API is a way for a React app to effectively produce global variables that can be passed around. This is the alternative to "prop drilling" or moving props from grandparent to child to parent, and so on. Context is also touted as an easier, lighter approach to state management using Redux.<br></br><br></br>
@@ -50,7 +50,7 @@ const Blog = () => {
             </div>
             <div className='container bg-light rounded border mb-4'>
                 <div className="p-4 text-start">
-                    <h1 className='brandColor'>Blog-3: What you know about useRef?</h1>
+                    <h1 className='funta-color'>Blog-3: What you know about useRef?</h1>
                     <p className='text-justify pt-2'>
                     <b className='fs-4'>useRef</b> <br></br>
                     <div className="demo">
