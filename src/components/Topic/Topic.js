@@ -8,8 +8,8 @@ import { Link } from 'react-router-dom';
 const Topic = ({topic}) => {
     const {id, name,logo,total} = topic;
     return (
-        <div className='col-md-3 '>
-            <Card style={{ width: '18rem' }}>
+        <div className='col-sm-12 col-md-6 col-lg-3 my-3'>
+            <Card>
                 <Card.Img  className='funta-bg text-light' variant="top" src={logo} />
                 <Card.Body className=''>
                     <Card.Title>{name}</Card.Title>

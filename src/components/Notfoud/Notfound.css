@@ -1,0 +1,8 @@
+.main-div{
+    background-image: url('../../images/404.png');
+    background-position: center;
+    padding: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 85vh;
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Table } from 'react-bootstrap';
 import { useLoaderData } from 'react-router-dom';
+import './Statistics.css'
 import {
     ComposedChart,
     Line,
@@ -17,9 +18,7 @@ const Statistics = () => {
     const quizdata = useLoaderData().data;
     const data = [];
 
-    quizdata.map(quiz => {
-        data.push({name : quiz.name, uv : quiz.total})
-    })
+    quizdata.map(quiz => data.push({name : quiz.name, uv : quiz.total}))
 
     
     return (
@@ -39,21 +38,22 @@ const Statistics = () => {
                 </thead>                               
                     {
                         quizdata.map((quiz, sl) => 
-                        <tbody key={quiz.id}>
+                        <tbody key={sl}>
                             <tr>
                                 <td>{sl+1}</td>
                                 <td>{quiz.name}</td>
                                 <td className='text-end'>{quiz.total}</td>
                             </tr>
-                        </tbody>)
+                        </tbody>
+                        )
                     }
                 </Table>
                 </div>
-                <div className="col-md-6">
+                <div className="col-md-6 mx-auto">
                 <h3 className=' pb-3'>Quiz List Chirt:</h3>
-                    <ComposedChart
-                        width={500}
-                        height={400}
+                    <ComposedChart className='chart'
+                        width={390}
+                        height={450}
                         data={data}
                         margin={{
                             top: 20,

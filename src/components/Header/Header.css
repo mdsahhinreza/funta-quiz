@@ -11,3 +11,6 @@
 .fanta-light-bg{
     background-color:#051d4014;
 }
+.active{
+    border-bottom: 3px solid rgb(189, 155, 3);
+}
