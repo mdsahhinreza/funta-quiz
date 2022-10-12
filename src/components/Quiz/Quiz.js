@@ -60,7 +60,7 @@ const Quiz = () => {
                 <div className="col-md-9">
                     <div className="container">
                         <h2 className='mt-5 mb-3'>Quiz Name : {data.name}</h2>
-                        <div className='row'>
+                        <div className='row m-0'>
                             {
                                 quistions.map((quistion, sl) => <Quistion
                                     key={quistion.id}

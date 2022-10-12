@@ -15,7 +15,6 @@ const Quistion = ({quistion,sl,showQAns,showhide,saveSelectAns,selectAns}) => {
 
     
     return (
-       <div className="row">
         <div className="col-md-9 m-auto">
         <div className='col-12 my-3 p-3 border rounded border-warning text-start fanta-light-bg'>
             
@@ -43,7 +42,6 @@ const Quistion = ({quistion,sl,showQAns,showhide,saveSelectAns,selectAns}) => {
             </div>
         </div>
         </div>
-       </div>
     );
 };
 

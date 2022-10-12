@@ -5,6 +5,10 @@ This project was bootstrapped with Create React App.
 ## Live Link
 [https://funta-quiz.netlify.app/](https://funta-quiz.netlify.app/)
 
+## Description
+
+This project was created for Programming hero Batch - 6, Assignment 9. This project has some features for quiz-related Educational Websites. In This project, we loaded some topics from API and some quizzes for this topic, and a statistics chart for the topic and quiz, And we don't store any data from you! Chill! 
+
 ## Technologies
 A list of technologies used within the project:
 * React: v18.2.0 
