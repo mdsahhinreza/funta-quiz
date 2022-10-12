@@ -1,6 +1,6 @@
 # Project Name : Funta Quiz
 
-This project was bootstrapped with Create React App.
+This project Created by Sahhin Reza.
 
 ## Live Link
 [https://funta-quiz.netlify.app/](https://funta-quiz.netlify.app/)
